@@ -85,7 +85,7 @@ class CmdLog extends CmdBase implements CacheBase {
     @Parameter(names=['-q','-quiet'], description = 'Show only run names', arity = 0)
     boolean quiet
 
-    @Parameter
+    @Parameter(required=false, description = 'run name of the executed workflow')
     List<String> args
 
     private Script filterScript
